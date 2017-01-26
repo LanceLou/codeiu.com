@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/codeiu/style/font-awesome.min.css">
+    <link rel="stylesheet" href="/codeiu/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/codeiu/style/public.css">
+    <link rel="stylesheet" href="/codeiu/style/taskDetails.css">
+</head>
+<body id="totalPageLoading">
+<!--id topM-sysMsg or topM-warning-->
+<section class="top-message">
+    <section class="systemMessage">
+        <h3>您有未读的消息</h3>
+        <ul class="msg-item-container"></ul>
+        <div class="msgContent" data-mid=""></div>
+    </section>
+    <section class="warning">
+        <p class="warning-p"></p>
+    </section>
+</section>
+<section class="pageLoading">
+    <i class="fa fa-refresh loader" aria-hidden="true"></i>
+</section>
+<header>
+    <h1 class="logo">大学生在校编码平台</h1>
+    <div class="nav-bar">
+        <i class="bar"></i>
+        <i class="bar"></i>
+        <i class="bar"></i>
+    </div>
+    <span class="nav">
+        <a href="#" class="userLink click-toggle"><i class="name"></i>@<span class="team-name"></span><i class="down-ico"></i></a>
+        <ul class="show-hidden"></ul>
+    </span>
+</header>
+<section class="mobile-nav">
+    <ul>
+        <li><i class="name"></i>@<span class="team-name"></span></li>
+    </ul>
+</section>
+
+<section class="container">
+    <h2 class="header-l2 col-md-12 col-sm-12 j2d-name" id="task-name">任务十四：零基础JavaScript编码（二）<em>【已经结束】</em></h2>
+    <section class="task-detail col-md-9">
+        <div class="basic-info-brief">
+            <dl>
+                <dt>面向人群：</dt>
+                <dd class="j2d-forStudent"></dd>
+                <dt>难度：</dt>
+                <dd class="j2d-taskLevel"></dd>
+            </dl>
+            <div class="info col-sm-12">
+                <p><span>发布时间:</span><span class="j2d-releaseTime"></span></p>
+                <p><span>截止时间:</span><span class="j2d-cutOffTime"></span></p>
+                <p><span>难度:</span><span class="j2d-taskLevel"></span></p>
+                <p><span>平均得分:</span><span class="j2d-taskAverageGrade"></span></p>
+                <div class="task-ctr">
+                    <!--/提交任务 or 查看review or 不显示(任务已过期且未提交或者当前为导师)-->
+                    <a href="#" class="btn taskOperate"></a>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content">
+            <h3>任务目的</h3>
+            <ul class="j2d-taskAim"></ul>
+            <h3>任务描述</h3>
+            <div class="j2d-desc"></div>
+            <h3>任务注意事项</h3>
+            <ul class="j2d-attentionItem"></ul>
+            <h3>任务协作建议</h3>
+            <ul class="j2d-cooperationItem"></ul>
+            <h3>在线学习参考资料</h3>
+            <ul class="j2d-referInfo innerHtml"></ul>
+            <h3>已提交任务的团队(<i id="taskSubmitHeader-num">0</i>)</h3>
+            <table class="pushed-group">
+                <tr>
+                    <th></th>
+                    <th class="team-info">提交团队</th>
+                    <th>提交时间</th>
+                    <th>得分</th>
+                </tr>
+            </table>
+            <div class="pageNavWrapper" id="pageNavWrapper-container">
+                <!--id:  pageNavWrapper-noPage  pageNavWrapper-onePage-->
+                <ul id="">
+                    <li><a href="javascript: void(0);" class="prev-page">«</a></li>
+                    <!--start dynamic load-->
+                    <!--<li class="curPageNum"><a href="javascript: void(0);" data-pageNum = "1">1</a></li>-->
+                    <!--<li><a href="javascript: void(0);" data-pageNum="2">2</a></li>-->
+                    <!--<li><a href="javascript: void(0);" data-pageNum="3">3</a></li>-->
+                    <!--<li><a href="javascript: void(0);" data-pagenum="4">4</a></li>-->
+                    <!--<li><a href="javascript: void(0);" data-pageNum="5">5</a></li>-->
+                    <!--end dynamic load-->
+                    <li><a href="javascript: void(0);" class="next-page">»</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="task-overview col-md-3 col-sm-12">
+        <div class="info col-sm-12">
+            <div class="task-ctr">
+                <!--/提交任务 or 查看review or 不显示(任务已过期且未提交或者当前为导师)-->
+                <a href="#" class="btn taskOperate"></a>
+            </div>
+            <p><span>发布时间:</span><span class="j2d-releaseTime"></span></p>
+            <p><span>截止时间:</span><span class="j2d-cutOffTime"></span></p>
+            <p><span>难度:</span><span class="j2d-taskLevel">简单</span></p>
+            <p><span>平均得分:</span><span class="j2d-taskAverageGrade"></span></p>
+        </div>
+        <div class="task-group-rank">
+            <h3>任务得分排名</h3>
+            <table id="task-group-rank">
+                <tr>
+                    <th></th>
+                    <th>团队</th>
+                    <th>得分</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</section>
+<!-- 建站相关信息介绍: 网站相关  联系合作  关注我们 -->
+<section class="infoShow">
+    <div class="col-md-1"></div>
+    <section class="aboutSite col-md-2">
+        <span class="title">网站相关</span>
+        <span><a href="#">关于我们</a></span>
+        <span><a href="#">帮助中心</a></span>
+    </section>
+    <section class="contactCo col-md-2">
+        <span class="title">联系合作</span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+    </section>
+    <section class="aboutUs col-md-2">
+        <span class="title">关注我们</span>
+        <span><a href="#">github</a></span>
+        <span><a href="#">微博</a></span>
+        <span><a href="#">Twitter</a></span>
+    </section>
+    <section class="friendlyLink col-md-2">
+        <span class="title">友情链接</span>
+        <span><a href="#">w3cplus</a></span>
+        <span><a href="#">w3c</a></span>
+        <span><a href="#">MDN</a></span>
+    </section>
+    <section class="declare col-md-3">
+        <span>网站声明</span>
+        <p>本站点所有资源均由用户产生与使用,站点仅是一个资源的存放与分享平台,不对相关的资源的版权负责。</p>
+    </section>
+    <div class="col-md-1 col-sm-0"></div>
+</section>
+
+<!--回到顶部功能部分-->
+    <span class="backToTop">
+        <i class="fa fa-chevron-up"></i>
+    </span>
+
+
+<!-- 相关版权申明 -->
+<footer>
+    <span class="block">Copyright © 2016 CodeIU</span>
+    <span class="block">备案中......</span>
+</footer>
+<script src="/codeiu/script/utils.js"></script>
+<script src="/codeiu/script/public.js"></script>
+<script src="/codeiu/script/taskDetails.js"></script>
+</body>
+</html>

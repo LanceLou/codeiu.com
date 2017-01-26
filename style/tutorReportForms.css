@@ -1,0 +1,381 @@
+header{
+    z-index: 100;
+}
+html,body{
+    height: 100%;
+}
+section.main-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 56px;
+    top: 0;
+    max-width: 1440px;
+    font-size: 0;
+}
+section.main-wrapper section.left-nav{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-top: 3%;
+}
+section.main-wrapper section.left-nav .tutorInfo{
+    text-align: center;
+}
+section.main-wrapper section.left-nav .tutorInfo div.tutorIcon{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00b7ee;
+}
+section.main-wrapper section.left-nav .tutorInfo span:last-child{
+    /*margin-left: 1rem;*/
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+section.main-wrapper section.left-nav .nav-list{
+    margin-top: 3rem;
+}
+section.main-wrapper section.left-nav .nav-list ul{
+    padding: 0;
+}
+section.main-wrapper section.left-nav .nav-list ul li{
+    list-style: none;
+}
+section.main-wrapper section.left-nav .nav-list ul a{
+    display: block;
+    line-height: 3rem;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #eee;
+}
+section.main-wrapper section.main-display{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+    vertical-align: bottom;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+section.main-wrapper section.main-display > section{
+    opacity: 0;
+    filter: opacity(0);
+    padding-bottom: 5rem;
+    font-size: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+section.main-wrapper section.main-display section.cur-panel{
+    opacity: 1;
+    filter: opacity(100%);
+    z-index: 99;
+}
+section.main-wrapper section.main-display section.reportForm-item > *{
+    position: relative;
+}
+section.main-wrapper section.main-display section.reportForm-item p.no-item-show{
+    display: none;
+}
+section.main-wrapper section.main-display section.reportForm-item h3{
+    text-align: center;
+}
+section.main-wrapper section.main-display section.reportForm-item ul > li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+section.main-wrapper section.main-display #stuInfo-noStu p.no-stuShow{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl > li{
+    margin: 1rem 0;
+    border-bottom: 1px solid #555555;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl > li a.btn-showAllSubmit{
+    position: absolute;
+    right: 2rem;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl > li > i{
+    margin: 0 1rem;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl > li > a:first-child{
+    display: inline-block;
+    width: 16rem;
+    vertical-align: bottom;
+}
+
+section.main-wrapper section.main-display .tasks-info .taskColl li ul{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    overflow: hidden;
+    transition: all 1s linear;
+    display: block;
+    height: 0;
+    opacity: 0;
+    filter: opacity(0);
+}
+section.main-wrapper section.main-display .tasks-info .taskColl li ul.show{
+    height: auto;
+    opacity: 1;
+    filter: opacity(100%);
+}
+section.main-wrapper section.main-display .tasks-info .taskColl li ul li > a:first-child{
+    width: 220px;
+    display: inline-block;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl li ul li a:last-child{
+    position: absolute;
+    right: 30%;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl li i{
+    font-style: normal;
+    margin: 0 0.5rem;
+}
+section.main-wrapper section.main-display .tasks-info .taskColl li em{
+    margin: 0 0.5rem;
+    font-style: normal;
+}
+section.main-wrapper section.main-display .tasks-info .taskSubmit-interval{
+    width: 98%;
+    height: 360px;
+    margin: 1rem auto;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    vertical-align: bottom;
+    border: 1px solid #ccc;
+    background-color: #fff !important;
+    opacity: 0;
+    filter: opacity(0);
+}
+section.main-wrapper section.main-display #taskInfo-noneTask .taskColl{
+    display: none;
+}
+section.main-wrapper section.main-display #taskInfo-noneTask .taskExcColl{
+    display: none;
+}
+section.main-wrapper section.main-display #taskInfo-noneTask #allTask-pageNavWrapper-container{
+    display: none;
+}
+section.main-wrapper section.main-display #taskInfo-noneTask p.none-taskShow{
+    display: block;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    color: #FF6138;
+}
+section.main-wrapper section.main-display section .proportion{
+    display: inline-block;
+    margin: 1rem 1%;
+    padding: 1rem;
+    width: 48%;
+    height: 360px;
+    vertical-align: bottom;
+    border: 1px solid #ccc;
+    background-color: #fff !important;
+    opacity: 0;
+    filter: opacity(0);
+}
+section.main-display .tasks-info ul.taskColl{
+    min-height: 200px;
+}
+section.main-display .tasks-info .taskExcColl > li{
+    border-bottom: 1px solid #555;
+    padding: 1rem 0;
+}
+section.main-display .tasks-info .taskExcColl > li > a:first-child{
+    width: 220px;
+    display: inline-block;
+    color: #EB3941;
+    text-decoration: underline;
+    vertical-align: sub;
+}
+section.main-display .tasks-info .taskExcColl > li > a:last-of-type{
+    position: absolute;
+    right: 20%;
+}
+section.main-display .tasks-info .taskExcColl > li ul{
+    list-style: none;
+    display: none;
+}
+section.main-display .tasks-info .taskExcColl > li ul.show{
+    display: block;
+}
+section.main-display .tasks-info .taskExcColl ul li > a{
+    margin-right: 5rem;
+    width: 20%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+section.main-display .tasks-info .taskExcColl li span a{
+    margin: 0 0.3rem;
+}
+section.main-display .team-info td p{
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+}
+section.main-display .team-info table td a{
+    margin: 0 0.3rem;
+}
+section.main-display .team-info table td:first-child a{
+    max-width: 12rem;
+    display: inline-block;
+    margin: 0;
+}
+section.main-wrapper section.main-display section.reportForm-item .ready{
+    -webkit-animation: ready 0.9s ease-in;
+    -o-animation: ready 0.8s ease-in;
+    animation: ready 0.8s ease-in;
+    opacity: 1;
+    filter: opacity(100%);
+}
+
+@keyframes ready {
+    0%{
+        opacity: 0;
+        filter: opacity(0);
+        left: -30px;
+    }
+    100%{
+        opacity: 1;
+        filter: opacity(100);
+        left: 0;
+    }
+}
+footer{
+    display: none;
+}
+section.infoShow{
+    display: none;
+}
+#allTask-pageNavWrapper-container{
+    margin-bottom: 9rem;
+}
+#pageNavWrapper-noPage{
+    display: none;
+}
+#pageNavWrapper-onePage *{
+    display: none;
+}
+#pageNavWrapper-onePage .curPageNum{
+    display: inline-block;
+}
+#pageNavWrapper-onePage .curPageNum > *{
+    display: block;
+}
+div.pageNavWrapper ul{
+    position: absolute;
+    right: 3rem;
+    font-size: 0;
+    margin-top: 20px;
+    padding-left: 0;
+}
+div.pageNavWrapper ul li{
+    font-size: 1rem;
+    width: 2.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-left: 0;
+    list-style: none;
+    cursor: pointer;
+}
+div.pageNavWrapper ul li:hover{
+    background-color: #eee;
+}
+div.pageNavWrapper ul li:first-child{
+    border-left: 1px solid #ccc;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+div.pageNavWrapper ul li:last-child{
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+div.pageNavWrapper ul li.curPageNum{
+    background-color: #36C565;
+    pointer-events: none;
+}
+div.pageNavWrapper ul li a{
+    display: inherit;
+    width: 100%;
+}
+div.pageNavWrapper ul li.curPageNum a{
+    color: #fff;
+}
+@media only screen and (min-width: 1440px){
+    section.main-wrapper{
+        left: 50%;
+        margin-left: -720px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    section.main-wrapper section.main-display .tasks-info li ul li a:last-child{
+        right: 20%;
+    }
+}
+@media only screen and (max-width: 768px){
+    section.main-wrapper section.left-nav{
+        padding-top: 2%;
+    }
+    section.main-wrapper section.left-nav .nav-list{
+        margin-top: 1rem;
+    }
+    section.main-wrapper section.left-nav .nav-list ul a{
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    section.main-wrapper section.left-nav .tutorInfo div.tutorIcon{
+        width: 50px;
+        height: 50px;
+    }
+    section.main-wrapper section.left-nav .tutorInfo span:last-child{
+        display: block;
+        font-size: 0.5rem;
+        margin: 1rem 0 0;
+    }
+    section.main-wrapper section.main-display section .proportion{
+        height: 200px;
+    }
+
+    section.main-wrapper section.main-display .tasks-info li ul li a:first-child{
+        width: 120px;
+    }
+    section.main-wrapper section.main-display .tasks-info li ul li i{
+        display: none;
+    }
+    section.main-wrapper section.main-display .tasks-info li ul li em{
+        display: none;
+    }
+    section.main-wrapper section.main-display .tasks-info .taskColl > li > i{
+        display: none;
+    }
+    section.main-wrapper section.main-display .tasks-info .taskColl li ul li a:last-child{
+        right: 10%;
+    }
+}
+@media only screen and (max-width: 480px){
+
+}

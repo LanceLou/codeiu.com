@@ -1,0 +1,249 @@
+section.main-wrapper div.teamInfo{
+    margin-top: 8rem;
+    padding: 10px 12px;
+    background-color: #f3f3f3;
+}
+section.main-wrapper div.teamInfo i{
+    font-style: normal;
+}
+section.main-wrapper div.teamInfo h2{
+    margin: 0;
+    color: #3e3e3e;
+}
+section.main-wrapper div.teamInfo h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+section.main-wrapper div.teamInfo h5{
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #8e8e8e;
+}
+section.main-wrapper div.teamInfo h6{
+    margin-top: 0.3rem;
+    color: #8e8e8e;
+}
+section.main-wrapper div.teamInfo div.team-member{
+    padding: 0.6rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+section.main-wrapper div.teamInfo div.team-member .member-avatar{
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    display: inline-block;
+    background-color: #b9c2c3;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section.main-wrapper div.teamInfo div.team-member .member-avatar i{
+    font-style: normal;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    line-height: 2rem;
+    background-color: #5e5e5e;
+    color: #fff;
+}
+section.main-wrapper div.teamInfo .team-announcement a{
+    margin-right: 0.5rem;
+}
+section.main-wrapper div.teamInfo .team-announcement p{
+    padding: 0.5rem 0.9rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: -0.3px 0.5px 1px #ccc;
+}
+section.popupReview .reviewDialog .prContent{
+    padding: 0 1.2rem;
+}
+section.popupReview .reviewDialog label{
+    display: block;
+}
+section.popupReview .reviewDialog textarea{
+    width: 100%;
+    border-color: #d6d4d2;
+    border-radius: 5px;
+    resize: none;
+}
+section.main-wrapper div.teamInfo .activity-info-nav{
+    border-bottom: 1px solid #ccc;
+}
+section.main-wrapper div.teamInfo .activity-info-nav span{
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    cursor: pointer;
+}
+section.main-wrapper div.teamInfo .activity-info-nav span em{
+    font-style: normal;
+    color: #36C565;
+    padding: 0 0.2rem;
+}
+section.main-wrapper div.teamInfo .activity-info-nav .cur-block{
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+section.main-wrapper div.teamInfo .activity-info-nav .cur-block:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -1px;
+}
+section.main-wrapper div.teamInfo .activity-info{
+    min-height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    box-shadow: -0.5px 0.6px 1px #ccc;
+    position: relative;
+}
+section.main-wrapper div.teamInfo .activity-info .loadShow{
+    display: none;
+}
+section.main-wrapper div.teamInfo div.loading .loadShow{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 4rem;
+    color: #36C565;
+    -webkit-animation: loadingRotate 1.5s 0s linear infinite;
+    -o-animation: loadingRotate 1.5s 0s linear infinite;
+    animation: loadingRotate 1.5s 0s linear infinite;
+}
+@keyframes loadingRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+section.main-wrapper div.teamInfo div.list-wrapper{
+    padding: 1rem;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+section.main-wrapper div.teamInfo div.cur-list-wrapper{
+    display: flex;
+    min-height: 162.6px;
+}
+section.main-wrapper div.teamInfo div.list-wrapper h3{
+    margin-top: 0;
+}
+section.main-wrapper div.teamInfo div.list-wrapper .task{
+    width: 25%;
+    padding: 0.9rem 0.5rem;
+    outline: 1px solid #ccc;
+    outline-offset: -0.6rem;
+    background-color: #fbfbfb;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0.5rem solid #fff;
+}
+section.main-wrapper div.teamInfo div.list-wrapper .task h3{
+    font-size: 1.5rem;
+}
+section.main-wrapper div.teamInfo div.list-wrapper .task p{
+    margin: 0.5rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    color: #8e8e8e;
+}
+section.main-wrapper div.teamInfo div.list-wrapper .task a.btn{
+    background-color: #36C565;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+}
+section.main-wrapper div.teamInfo div.list-wrapper .task p span:first-child{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+section.main-wrapper div.teamInfo div.list-wrapper .task p span:last-child{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+div.pageNavWrapper{
+    margin-left: 1.5rem;
+}
+div.pageNavWrapper ul{
+    font-size: 0;
+    margin-top: 20px;
+    padding-left: 0;
+}
+div.pageNavWrapper ul li{
+    font-size: 1rem;
+    width: 2.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-left: 0;
+    list-style: none;
+    cursor: pointer;
+}
+div.pageNavWrapper ul li:hover{
+    background-color: #eee;
+}
+div.pageNavWrapper ul li:first-child{
+    border-left: 1px solid #ccc;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+div.pageNavWrapper ul li:last-child{
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+div.pageNavWrapper ul li.curPageNum{
+    background-color: #36C565;
+}
+div.pageNavWrapper ul li a{
+    display: inherit;
+    width: 100%;
+}
+div.pageNavWrapper ul li.curPageNum a{
+    color: #fff;
+}
+@media only screen and (max-width: 1024px){
+    section.main-wrapper div.teamInfo div.list-wrapper .task{
+        width: 33.3%;
+    }
+}
+@media only screen and (max-width: 768px){
+    section.main-wrapper div.teamInfo div.list-wrapper .task{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 480px){
+    section.main-wrapper div.teamInfo div.list-wrapper .task{
+        width: 100%;
+    }
+
+    section.main-wrapper div.teamInfo{
+        margin-top: 2rem;
+    }
+}

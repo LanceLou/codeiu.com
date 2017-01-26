@@ -1,0 +1,430 @@
+header h1 span{
+    display: inline-block;
+    position: absolute;
+    font-size: 1.6rem;
+    right: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+}
+header h1 span a{
+    pointer-events: auto;
+    color: #2f5d91;
+}
+header h1 span a:hover{
+    color: #00b7ee;
+}
+a.button{
+    display: block;
+    padding: 10px 10px;
+    margin: 10px 30px;
+    border: 1px solid #f19181;
+    border-radius: 5px;
+    background-color: rgba(217,204,180,0.2);
+    color: #f2f2eb;
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: background 0.5s linear;
+}
+a.button:hover{
+    background-color: #FF6138;
+}
+div.in-wrapper{
+    padding-top:20px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #CEEDF0;
+    border-top: none;
+}
+div.in-wrapper label{
+    /*position: relative;*/
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+    margin: 8px 0;
+    vertical-align: sub;
+    font-size: 1.8rem;
+    color: #fff;
+}
+div.in-wrapper label:before{
+    content: attr(data-confirm);
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100px;
+    right: 2rem;
+}
+div.in-wrapper input[type="text"], div.in-wrapper input[type="submit"],div.in-wrapper input[type="password"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 50%;
+    line-height: 2.2rem;
+    padding-left:0.5rem;
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+    border: 1px solid #a6d982;
+    border-radius: 2px;
+}
+div.in-wrapper input[type="submit"]{
+    width: 50%;
+    margin-top:20px;
+    border: 1px solid #374a4e;
+    outline: none;
+}
+section.banner{
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background-image: url("../images/banner-bi-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e0e1dc;
+    transition: all 1s linear;
+}
+section.banner > section{
+    opacity: 0;
+    filter: opacity(0);
+    margin-left: -100px;
+    display: none;
+}
+section.banner > section.curShow{
+    opacity: 1;
+    filter: opacity(1);
+    margin-left: auto;
+    display: block;
+}
+section.banner > section.curShowToHidden{
+    -webkit-animation: showToHidden 1s linear 0s 1 alternate;
+    -o-animation: showToHidden 1s linear 0s 1 alternate;
+    animation: showToHidden 1s linear 0s 1 alternate;
+}
+section.banner > section.curHiddenToShow{
+    -webkit-animation: hideToShow 1s linear 0s 1 alternate;
+    -o-animation: hideToShow 1s linear 0s 1 alternate;
+    animation: hideToShow 1s linear 0s 1 alternate;
+}
+body#logined section.banner > section{
+    display: none;
+}
+body#logined section.banner > section.welcome-m{
+    display: block;
+    opacity: 1;
+    filter: opacity(100%);
+    margin-left: auto;
+}
+body#logined header h1 span{
+    visibility: visible;
+}
+@-webkit-keyframes showToHidden { from { opacity: 1; filter: opacity(100%); } to { opacity: 0; filter: opacity(0); }  }
+@-moz-keyframes showToHidden { from { opacity: 1; filter: opacity(100%); } to { opacity: 0; filter: opacity(0); }  }
+@-o-keyframes showToHidden { from { opacity: 1; filter: opacity(100%); } to { opacity: 0; filter: opacity(0); }  }
+@keyframes showToHidden { from { opacity: 1; filter: opacity(100%); } to { opacity: 0; filter: opacity(0); }  }
+
+@-webkit-keyframes hideToShow { from { opacity: 0; filter: opacity(0); } to { opacity: 1; filter: opacity(100%); }  }
+@-moz-keyframes hideToShow { from { opacity: 0; filter: opacity(0); } to { opacity: 1; filter: opacity(100%); }  }
+@-o-keyframes hideToShow { from { opacity: 0; filter: opacity(0); } to { opacity: 1; filter: opacity(100%); }  }
+@keyframes hideToShow { from { opacity: 0; filter: opacity(0); } to { opacity: 1; filter: opacity(100%); }  }
+section.banner .welcome-m,.login-m,.register-m,.intro-m{
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+section.banner h1{
+    margin: 0;
+    margin-bottom: 20px;
+}
+section.banner p{
+    text-indent: 2em;
+    padding: 0 8%;
+    line-height: 3.5rem;
+    font-size: 2.8rem;
+    text-align: justify;
+}
+section.banner a#loginBtn:hover{
+    background-color: #f25050;
+}
+section.banner a#regBtn:hover{
+    background-color: #f19181;
+}
+section.banner .emailVerifyNotice-m{
+    min-height: 300px;
+    position: relative;
+}
+section.banner .emailVerifyNotice-m h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 49%;
+}
+section.banner .welcome-m .user-img-wrapper{
+    position: relative;
+    display: block;
+    height: 100px;
+}
+section.banner .welcome-m .user-img-wrapper .img{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section.banner .welcome-m a{
+    padding: 9px 0;
+    margin: 15px 0;
+}
+section.banner .register-m .wrapper .nav{
+    background-color: rgba(255, 255, 255,0.6);
+    font-size: 0;
+
+}
+section.banner .register-m .wrapper .nav span{
+    display: inline-block;
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    line-height: 3.5rem;
+    color: #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+section.banner .register-m .wrapper .nav span:first-child{
+    border-right: 1px solid #ccc;
+}
+section.banner .register-m .wrapper .nav span:last-child{
+    border-left: 1px solid #ccc;
+}
+section.banner .register-m .wrapper .nav span.cur{
+    color: #FF6138;
+    cursor: default;
+}
+section.banner .login-m{
+    margin-top: 30px;
+}
+section.banner .login-m #findBackPwd{
+    margin-left: 3rem;
+    color: #fff;
+    text-decoration: underline;
+}
+section.banner .login-m .in-wrapper{
+    border: none;
+}
+section.banner .login-m .in-wrapper #verification-code{
+    width: 20%;
+}
+section.banner .login-m .in-wrapper img{
+    margin-left: 10px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+}
+
+section.intro{
+    position: relative;
+    height: 400px;
+}
+
+section.tutors-intro p{
+    font-size: 2rem;
+    color: #36C565;
+}
+section.teams-intro{
+    background-color: #BEEB9F;
+}
+section.teams-intro p{
+    font-size: 2rem;
+    color: #FF6138;
+}
+section.tasks-intro{
+    height: 500px;
+    background-image: url("http://ww3.sinaimg.cn/large/ad5d774bjw1f9u6uhhlxuj20p00fj0vk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.intro img{
+    width: 150px;
+    height: 150px;
+}
+
+section.banner p{
+    padding: 0 8%;
+    line-height: 3.5rem;
+    font-size: 2.8rem;
+    text-align: justify;
+}
+section.banner a.button{
+    margin-top: 40px;
+}
+section.banner .welcome-m h1{
+    margin: 50px 0;
+}
+
+section.intro > *{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.intro p{
+    width: 36%;
+}
+section.intro p span{
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+section.tasks-intro p{
+    color: #BEEB9F;
+    font-size: 2.5rem;
+    width: auto;
+    padding: 0 10%;
+    line-height: 3.5rem;
+}
+.scrollLoad-leftToRight{
+    left: 10%;
+    transition: left 1s ease;
+}
+.scrollLoad-rightToLeft{
+    right: 10%;
+    transition: all 1s ease;
+}
+.scrollLoad-bottomToTop{
+    bottom: 30%;
+    transition: bottom 1s ease;
+}
+
+.scrollLoad-rightToLeft-show{
+    right: 15%;
+    transition: all 1s ease;
+}
+
+.scrollLoad-leftToRight-show{
+    left: 15%;
+    transition: all 1s ease;
+}
+.scrollLoad-bottomToTop-show{
+    bottom: 15%;
+    transition: bottom 1s ease;
+}
+@media only screen and (max-width: 768px){
+    section.banner .welcome-m h1{
+        margin: 1.2rem 0;
+    }
+    section.banner{
+        padding: 40px 0;
+    }
+    section.banner a.button{
+        margin: 0.8rem 1rem;
+    }
+    section.banner .emailVerifyNotice-m h1{
+        width: 99%;
+    }
+    section.intro{
+        padding-top: 20px;
+        text-align: center;
+    }
+    section.intro p{
+        text-align: justify;
+        text-indent: 2rem;
+    }
+    section.tasks-intro{
+        height: 300px;
+    }
+    section.tasks-intro p{
+        font-size: 1.7rem;
+        color: #BEEB9F;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        padding: 0 20px;
+    }
+    .scrollLoad-leftToRight,.scrollLoad-rightToLeft,.scrollLoad-bottomToTop{
+        position: static;
+    }
+    section.infoShow{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    section.banner p{
+        padding: 0 1rem;
+        line-height: 1.8rem;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    div.in-wrapper{
+        margin-top: 20px;
+        border: none;
+    }
+    div.in-wrapper input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    div.in-wrapper input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+    div.in-wrapper label{
+        width: 50%;
+        position: absolute;
+        margin-top: -24px;
+        text-align: left;
+    }
+    div.in-wrapper label:before{
+        right: -90%;
+        bottom: -49px;
+    }
+    /*section.register-m*/
+    div.in-wrapper input[type="text"], div.in-wrapper input[type="password"]{
+        width: 100%;
+    }
+    section.register-m div.in-wrapper label:before{
+        bottom: 5px;
+        width: 120px;
+    }
+    div.in-wrapper input[type="submit"]{
+        margin-top: -2px;
+    }
+    section.banner .login-m .in-wrapper #verification-code{
+        width: 30%;
+    }
+    section.banner .login-m .in-wrapper label:before{
+        right: -50px;
+        bottom: 5px;
+    }
+    section.banner .login-m .in-wrapper input[type="submit"]{
+        margin-top: 20px;
+    }
+    section.banner .emailVerifyNotice-m h1{
+        top: 30%;
+        font-size: 3rem;
+    }
+    section.intro > *{
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    section.intro p{
+        width: 100%;
+    }
+    section.tasks-intro p{
+        line-height: 2rem;
+        font-size: 1.5rem;
+        left: 0;
+    }
+    .scrollLoad-leftToRight-show{
+        left: 0;
+    }
+    .scrollLoad-rightToLeft-show{
+        right: 0;
+    }
+}

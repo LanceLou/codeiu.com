@@ -1,0 +1,187 @@
+body{
+    background-color: #f8f9fa;
+}
+.main-wrapper .info-show{
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.main-wrapper .info-show .user-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #00b7ee;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main-wrapper .info-show h2.user-name{
+    text-align: center;
+    font-weight: 400;
+}
+.main-wrapper .info-show h4.single-intro{
+    text-align: center;
+    font-weight: 200;
+    color: #8c8c8c;
+    padding: 0 1rem;
+}
+.main-wrapper .main-info-display{
+    padding: 2rem 0;
+    height: 500px;
+    background-color: #eee;
+    padding-top: 100px;
+}
+.main-wrapper .main-info-display > span:first-child{
+    top: 1rem;
+}
+.main-wrapper .main-info-display span.label{
+    background-color: #36C565;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    line-height: 2rem;
+    padding: 0 1.2rem 0 1.2rem;
+    cursor: pointer;
+}
+.main-wrapper .main-info-display span.cur-label{
+    color: #ccc;
+}
+.main-wrapper .main-info-display span.label:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 1rem solid #eee;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    left: 0;
+}
+.main-wrapper .main-info-display > span:nth-child(2){
+    top: 3.8rem;
+}
+.main-wrapper .main-info-display:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 2px;
+    background-color: #000;
+    top: 17rem;
+    z-index: 0;
+}
+.main-wrapper .main-info-display div.block{
+    width: 80%;
+    padding: 1rem 2rem;
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+    font-size: 1.7rem;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 3px #ccc;
+    box-sizing: border-box;
+    border-left: 2px solid #FF6138;
+    background-color: #fff;
+    z-index: 100;
+}
+.main-wrapper .main-info-display div.maskBlock{
+    top: 90px;
+    z-index: 9;
+    background-color: #eee;
+    box-shadow: none;
+    border: 0;
+}
+.main-wrapper .main-info-display div.university-info-show{
+    z-index: 10;
+    top: -18rem;
+    width: 60%;
+}
+.main-wrapper .main-info-display div.block p{
+    line-height: 2.5rem;
+}
+.main-wrapper .main-info-display div.block p span{
+    display: inline-block;
+}
+.main-wrapper .main-info-display div.block p span:first-child{
+    vertical-align: top;
+    width: 13%;
+    box-sizing: border-box;
+    padding-right: 1.5rem;
+    text-align: right;
+    color: #8e8e8e;
+}
+.main-wrapper .main-info-display div.block p span:last-child{
+    width: 80%;
+    text-align: justify;
+    color: #636363;
+}
+.main-wrapper .main-info-display #hidden{
+    -webkit-animation: hidden 1.3s ease-in 0s 1;
+    -o-animation: hidden 1.3s ease-in 0s 1;
+    animation: hidden 1.3s ease-in 0s 1;
+    left: 0;
+    opacity: 0;
+    filter: opacity(0);
+}
+.main-wrapper .main-info-display #show{
+    -webkit-animation: show 1s linear 0s 1;
+    -o-animation: show 1s linear 0s 1;
+    animation: show 1s linear 0s 1;
+    left: 3rem;
+    opacity: 1;
+    filter: opacity(100%);
+}
+@keyframes hidden {
+    0% {
+        left: 3rem;
+        opacity: 1;
+        filter: opacity(100%);
+    }
+    to {
+        left: 0;
+        opacity: 0;
+        filter: opacity(0);
+    }
+}
+@keyframes show {
+    0% {
+        left: 0;
+        opacity: 0;
+        filter: opacity(0);
+    }
+    to {
+        left: 3rem;
+        opacity: 1;
+        filter: opacity(100%);
+    }
+}
+@media only screen and (max-width: 768px){
+    .main-wrapper .main-info-display div.block{
+        width: 90%;
+        top: 0;
+    }
+    .main-wrapper .main-info-display div.block p{
+        line-height: 2rem;
+    }
+    .main-wrapper .main-info-display div.block p span:first-child{
+        width: 100%;
+        text-align: left;
+    }
+    .main-wrapper .main-info-display div.block p span:last-child{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .main-wrapper .main-info-display div.university-info-show{
+        top: -28rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .main-wrapper .main-info-display div.block {
+        top: -2rem;
+    }
+    .main-wrapper .main-info-display div.university-info-show{
+        top: -32rem;
+    }
+}

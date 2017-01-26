@@ -1,0 +1,129 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #F1F69C;
+    position: relative;
+}
+section.mainC{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 60%;
+    height: 500px;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0 0.7rem 22px 1px #888;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+section.mainC > section{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+section.mainC section.left-show{
+    background-image: url('http://ww3.sinaimg.cn/large/ad5d774bjw1f9skzbrslkj20p00p041q.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section.mainC section.right-form{
+    padding: 2rem 6%;
+}
+section.mainC section.right-form h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1rem;
+}
+section.mainC section.right-form label{
+    position: relative;
+    margin-top: 1.2rem;
+    display: block;
+    color: #aaa;
+}
+section.mainC section.right-form label:after{
+    content: attr(data-error);
+    display: block;
+    position: absolute;
+    color: red;
+    top: 0;
+    right: 6rem;
+}
+section.mainC section.right-form label>a{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+section.mainC section.right-form label:last-of-type{
+    vertical-align: text-bottom;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+section.mainC section.right-form input{
+    width: 99%;
+    height: 2.8rem;
+}
+section.mainC section.right-form input.in{
+    border: 0;
+    outline: 0;
+    background-color: #f1f1f1;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+section.mainC section.right-form input#vc{
+    width: 40%;
+}
+section.mainC section.right-form input[type='checkbox']{
+    display: inline-block;
+    width: 5%;
+}
+section.mainC section.right-form input[type='submit']{
+    width: 60%;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    display: block;
+    color: #fff;
+    background-color: #36C565;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+section.mainC section.right-form img{
+    height: 2.6rem;
+    cursor: pointer;
+}
+section.mainC section.right-form h2{
+    font-size: 2.2rem;
+}
+@media only screen and (max-width: 768px){
+    section.mainC{
+        width: 90%;
+    }
+    section.mainC section.left-show{
+        display: none;
+    }
+    section.mainC section.right-form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    section.mainC{
+        height: 450px;
+    }
+}
+@media only screen and (max-height: 500px){
+    section.mainC{
+        -webkit-transform: translate(-50%, -20%);
+        -moz-transform: translate(-50%, -20%);
+        -ms-transform: translate(-50%, -20%);
+        -o-transform: translate(-50%, -20%);
+        transform: translate(-50%, -20%);
+    }
+}

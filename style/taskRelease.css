@@ -1,0 +1,158 @@
+section.main-wrapper{
+    margin-bottom: 8rem;
+}
+section.main-wrapper .inItemContainer{
+    padding: 1rem 5%;
+    font-size: 0;
+}
+section.main-wrapper .inItemContainer a{
+    font-size: 1.5rem;
+}
+section.main-wrapper .inItemContainer label{
+    width: 7rem;
+    text-align: right;
+    padding-right: 1rem;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+section.main-wrapper .inItemContainer input{
+    width: 50%;
+    padding-left: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    vertical-align: bottom;
+    margin: 0.5rem;
+}
+input#task-deadline{
+    width: 20%;
+}
+.calenderWrapper{
+    margin-left: 8rem;
+}
+.calender{
+    position: absolute;
+    left: 20%;
+    top: -1rem;
+    z-index: 1000;
+}
+section.main-wrapper .referLink input:nth-of-type(odd){
+    width: 20%;
+}
+section.main-wrapper .referLink input:nth-of-type(even){
+    width: 30%;
+}
+section.main-wrapper .inItemContainer select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20%;
+    height: 2.5rem;
+    color: #555;
+    display: inline-block;
+    padding-left: 1%;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    vertical-align: inherit;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    background-image: url(../images/pull_down_ico.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 20px 20px;
+    margin: 0.5rem;
+}
+section.main-wrapper .inItemContainer a.addItem{
+    margin: 0.5rem;
+    display: inline-block;
+    line-height: 2.7rem;
+    vertical-align: inherit;
+    font-size: 2rem;
+    background-color: #36C565;
+    width: 2.7rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+section.main-wrapper div.btns{
+    margin-top: 5rem;
+    text-align: center;
+}
+section.main-wrapper div.btns input{
+    width: 25%;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    background-color: #36C565;
+    color: #fff;
+}
+section.main-wrapper div.btns input:first-child{
+    background-color: #ccc;
+    color: #555;
+}
+@media only screen and (max-width: 480px){
+    section.main-wrapper .inItemContainer{
+        padding-top: 0;
+    }
+    section.main-wrapper .inItemContainer label{
+        text-align: left;
+        /*display: block;*/
+        /*margin: 0;*/
+    }
+    section.main-wrapper .inItemContainer label:empty{
+        margin: 0;
+    }
+    section.main-wrapper .inItemContainer input{
+        width: 100%;
+    }
+    input#task-deadline{
+        width: 50%;
+    }
+    section.main-wrapper .inItemContainer select{
+        width: 80%;
+        margin-top: 0;
+    }
+    section.main-wrapper .inItemContainer label{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    section.main-wrapper .referLink label{
+        width: 100%;
+    }
+    section.main-wrapper .inItemContainer label#calenderControl{
+        margin-bottom: 1rem;
+    }
+    section.main-wrapper .referLink input:nth-of-type(odd){
+        width: 30%;
+    }
+    section.main-wrapper .referLink input:nth-of-type(even){
+        width: 60%;
+    }
+    section.main-wrapper div.btns{
+        margin-top: 1rem;
+    }
+    section.main-wrapper div.btns input{
+        width: 90%;
+        margin: 0.8rem 0px;
+    }
+    .calenderWrapper{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .calender{
+        left: 0;
+    }
+}

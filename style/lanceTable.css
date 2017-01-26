@@ -1,0 +1,38 @@
+table.lanceTable{
+    width: 96%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+table.lanceTable caption{
+    text-align: center;
+}
+table.lanceTable th,td{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    font-weight: 300;
+}
+table.lanceTable th{
+    position: relative;
+    padding-right: 1.6rem;
+    color: #fff;
+    background-color: #333;
+}
+table.lanceTable th.orderAble:after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f0dc";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    cursor: pointer;
+}
+@media only screen and (min-width: 1440px){
+    table.lanceTable{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .mobileHidden{
+        display: none;
+    }
+}

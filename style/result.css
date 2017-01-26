@@ -1,0 +1,56 @@
+section.main-container{
+    min-height: 300px;
+}
+section.main-container section.sucBlock{
+    width: 50%;
+    line-height: 150px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 1px solid #00E79F;
+    position: relative;
+    color: #00E79F;
+}
+section#error section.sucBlock{
+    border-color: red;
+    color: red;
+}
+section.main-container section.sucBlock > *{
+    display: inline-block;
+}
+section.main-container section.sucBlock h5{
+    display: none;
+    font-size: 3rem;
+    margin-left: 6%;
+    vertical-align: middle;
+}
+section.main-container section.sucBlock p{
+    margin-left: 3%;
+    min-width: 30%;
+    max-width: 40%;
+    line-height: 2rem;
+}
+section.main-container section.sucBlock i{
+    display: none;
+    font-size: 7rem;
+    vertical-align: middle;
+    margin-left: 6%;
+}
+section.main-container section.sucBlock div.btnCols{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    line-height: normal;
+    padding: 3px 0;
+}
+section.main-container section.sucBlock div.btnCols .btn{
+    margin: 0 3px;
+    background-color: #00E79F;
+    color: #fff;
+}
+section#error section.sucBlock .error{
+    display: inline;
+}
+section#suc section.sucBlock .suc {
+    display: inline;
+}

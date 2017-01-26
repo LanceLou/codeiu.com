@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/codeiu/style/font-awesome.min.css">
+    <link rel="stylesheet" href="/codeiu/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/codeiu/style/public.css">
+    <link rel="stylesheet" href="/codeiu/style/userInfoShow.css">
+</head>
+<body id="totalPageLoading">
+<section class="pageLoading">
+    <i class="fa fa-refresh loader" aria-hidden="true"></i>
+</section>
+<!--
+    展示用户信息,主要是查看别人的消息时使用
+-->
+<!--id topM-sysMsg or topM-warning or topM-notice-->
+<section class="top-message">
+    <section class="systemMessage">
+        <h3>您有未读的消息</h3>
+        <ul class="msg-item-container"></ul>
+        <div class="msgContent" data-mid=""></div>
+    </section>
+    <section class="warning">
+        <p class="warning-p"></p>
+    </section>
+    <section class="tm-notice" id="noticeC">
+        <p>更新成功</p>
+    </section>
+</section>
+<section class="pageLoading">
+    <i class="fa fa-refresh loader" aria-hidden="true"></i>
+</section>
+<header>
+    <h1 class="logo">大学生在校编码平台</h1>
+    <div class="nav-bar">
+        <i class="bar"></i>
+        <i class="bar"></i>
+        <i class="bar"></i>
+    </div>
+    <span class="nav">
+        <a href="#" class="userLink click-toggle"><i class="name"></i>@<span class="team-name"></span><i class="down-ico"></i></a>
+        <ul class="show-hidden"></ul>
+    </span>
+</header>
+<section class="mobile-nav">
+    <ul>
+        <li><i class="name"></i>@<span class="team-name"></span></li>
+    </ul>
+</section>
+<section class="main-wrapper container">
+    <div class="info-show col-md-12 col-sm-12">
+        <div class="user-avatar center-block" data-imgUrl = "http://tp4.sinaimg.cn/2908583755/180/5746801334/1"></div>
+        <h2 class="user-name"></h2>
+        <h4 class="single-intro"></h4>
+    </div>
+    <div class="main-info-display col-md-12 col-sm-12">
+        <span class="label cur-label" data-target = "basic">个人资料</span>
+        <span class="label" data-target = "university">院校信息</span>
+        <div class="block maskBlock"></div>
+        <div class="block basic-info-show" id="show">
+            <p><span>专业方向:</span><span class="j2d-directionName"></span></p>
+            <p><span>邮箱:</span><span class="j2d-email"></span></p>
+            <p><span>个人简介:</span><span class="j2d-intro"></span></p>
+            <p><span>个人网站:</span><span><a href="#" class="j2d-personPageUrl"></a></span></p>
+            <p><span>所在团队:</span><a href="javascript: void(0)" class="j2d-teamName"></a></p>
+        </div>
+        <div class="block university-info-show" id="hidden">
+            <p><span>学校:</span><span class="j2d-universityName"></span></p>
+            <p><span>专业:</span><span class="j2d-professionName"></span></p>
+            <p><span>年级:</span><span class="j2d-grade"></span></p>
+        </div>
+    </div>
+</section>
+
+<!-- 建站相关信息介绍: 网站相关  联系合作  关注我们 -->
+<section class="infoShow">
+    <div class="col-md-1"></div>
+    <section class="aboutSite col-md-2">
+        <span class="title">网站相关</span>
+        <span><a href="#">关于我们</a></span>
+        <span><a href="#">帮助中心</a></span>
+    </section>
+    <section class="contactCo col-md-2">
+        <span class="title">联系合作</span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+    </section>
+    <section class="aboutUs col-md-2">
+        <span class="title">关注我们</span>
+        <span><a href="#">github</a></span>
+        <span><a href="#">微博</a></span>
+        <span><a href="#">Twitter</a></span>
+    </section>
+    <section class="friendlyLink col-md-2">
+        <span class="title">友情链接</span>
+        <span><a href="#">w3cplus</a></span>
+        <span><a href="#">w3c</a></span>
+        <span><a href="#">MDN</a></span>
+    </section>
+    <section class="declare col-md-3">
+        <span>网站声明</span>
+        <p>本站点所有资源均由用户产生与使用,站点仅是一个资源的存放与分享平台,不对相关的资源的版权负责。</p>
+    </section>
+    <div class="col-md-1 col-sm-0"></div>
+</section>
+
+<!--回到顶部功能部分-->
+<span class="backToTop">
+    <i class="fa fa-chevron-up"></i>
+</span>
+
+<!-- 相关版权申明 -->
+<footer>
+    <span class="block">Copyright © 2016 CodeIU</span>
+    <span class="block">备案中......</span>
+</footer>
+<script src="/codeiu/script/utils.js"></script>
+<script src="/codeiu/script/public.js"></script>
+<script src="/codeiu/script/userInfoShow.js"></script>
+</body>
+</html>

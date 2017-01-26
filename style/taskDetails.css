@@ -1,0 +1,295 @@
+div.j2d-desc{
+    padding-left: 3rem;
+}
+div.j2d-desc ul{
+    padding-left: 0;
+}
+div.j2d-desc pre code{
+    white-space: pre;
+}
+div.basic-info-brief .info{
+    display: none;
+}
+table.pushed-group{
+    width: 100%;
+}
+table.block-loading-animate{
+    min-height: 200px;
+}
+table.pushed-group td:first-of-type a{
+    color: #fff;
+    background-color: #36C565;
+    padding: 3px;
+}
+
+table.pushed-group th{
+    color: #8c8c8c;
+    width: 120px;
+}
+table.pushed-group th.team-info{
+    width: 450px;
+}
+table.pushed-group tr th:first-child{
+    width: 150px;
+}
+table.pushed-group tr th:last-child{
+    width: 80px;
+}
+table.pushed-group tr:first-child{
+    border-bottom: 1px solid #a6a6a6;
+}
+table.pushed-group tr:last-child{
+    border-bottom: 1px solid #a6a6a6;
+}
+table.pushed-group tr{
+    border-bottom: 1px dotted #a6a6a6;
+}
+table.pushed-group tr{
+    line-height: 3rem;
+}
+table.pushed-group tr th:last-child,td:last-child{
+    text-align: center;
+}
+div#pageNavWrapper-noPage{
+    display: none;
+}
+div#pageNavWrapper-onePage *{
+    display: none;
+}
+div#pageNavWrapper-onePage .curPageNum{
+    display: inline-block;
+}
+div.pageNavWrapper ul{
+    font-size: 0;
+    margin-top: 20px;
+    padding-left: 0;
+}
+div.pageNavWrapper ul li{
+    font-size: 1rem;
+    width: 2.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-left: 0;
+    list-style: none;
+    cursor: pointer;
+}
+div.pageNavWrapper ul li:hover{
+    background-color: #eee;
+}
+div.pageNavWrapper ul li:first-child{
+    border-left: 1px solid #ccc;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+div.pageNavWrapper ul li:last-child{
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+div.pageNavWrapper ul li.curPageNum{
+    background-color: #36C565;
+    pointer-events: none;
+}
+div.pageNavWrapper ul li a{
+    display: inherit;
+    width: 100%;
+}
+div.pageNavWrapper ul li.curPageNum a{
+    color: #fff;
+}
+section.task-overview{
+    border-left: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section.task-overview div.task-ctr{
+    margin-bottom: 10px;
+}
+section.task-overview div.task-ctr a{
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 3px;
+    background-color: #FF6138;
+    color: #fff;
+}
+section.task-overview p{
+    font-weight: 400;
+    line-height:1.6rem;
+}
+section.task-overview p span:last-child{
+    color: #8c8c8c;
+    margin-left: 5px;
+}
+section.task-overview h3{
+    font-weight: 500;
+}
+section.task-overview table.block-loading-animate{
+    height: 355px;
+}
+section.task-overview table{
+    width: 100%;
+}
+section.task-overview .task-group-rank table tr{
+    line-height: 2.6rem;
+    border-bottom: 1px solid #c4c4c4;
+}
+section.task-overview .task-group-rank table tr th:first-child{
+    width: 20px;
+}
+section.task-overview .task-group-rank table tr th:nth-child(3){
+    display: inline-block;
+    width: 2rem;
+}
+section.task-overview .task-group-rank table tr th:last-child{
+    width: 90px;
+}
+section.task-overview .task-group-rank table tr:first-child{
+    font-size: 1.2rem;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+section.task-overview .task-group-rank table tr a{
+    display: inline-block;
+    width: 90px;
+    color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+section.task-overview .task-group-rank table tr td:last-child a{
+    width: 70px;
+    padding: 0 3px;
+    vertical-align: inherit;
+    color: #fff;
+    background-color: #36C565;
+}
+section.task-overview .task-group-rank table tr td.team-name{
+    width: 100px;
+}
+section.task-overview .task-group-rank table tr:nth-child(2){
+    color: #F44336;   
+}
+section.task-overview .task-group-rank table tr:nth-child(3){
+    color: #F80;
+}
+section.task-overview .task-group-rank table tr:nth-child(4){
+    color: #FFC407;
+}
+section.popupReview .reviewDialog .prContent{
+    position: relative;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+section.popupReview .reviewDialog .prContent label{
+    width: 20%;
+    text-align: right;
+    padding-right: 2%;
+    vertical-align: middle;
+}
+section.popupReview .reviewDialog .prContent label:last-of-type{
+    vertical-align: top;
+}
+section.popupReview .reviewDialog .prContent label:after{
+    content: attr(data-error);
+    position: absolute;
+    right: 0;
+    color: red;
+}
+section.popupReview .reviewDialog .prContent input{
+    width: 66%;
+    height: 2.7rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: 0;
+    padding-left: 2px;
+}
+section.popupReview .reviewDialog .prContent textarea{
+    width: 66%;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: 0;
+}
+@media only screen and (max-width: 768px){
+    div.detail-content ul{
+        padding-left: 10px;
+    }
+    div.detail-content ul li{
+        /*list-style: none;*/
+    }
+    div.basic-info-brief{
+        margin-bottom: 10px;
+    }
+    div.basic-info-brief .info{
+        padding: 0;
+        display: block;
+    }
+    div.basic-info-brief .info p{
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 0.5rem 0.3rem;
+    }
+    div.basic-info-brief .info .task-ctr a{
+        display: inline-block;
+        padding: 6px 20px;
+        border-radius: 3px;
+        background-color: #FF6138;
+        color: #fff;
+    }
+    section.task-overview{
+        position: static;
+        border-left: 0;
+    }
+    section.task-overview div.info{
+        display: none;
+    }
+    /*section.task-overview div.task-ctr{*/
+        /*text-align: right;*/
+        /*padding-right: 80px;*/
+        /*margin-bottom: 10px;*/
+    /*}*/
+    /*section.task-overview p{*/
+        /*font-size: 1.5rem;*/
+        /*display: inline-block;*/
+        /*margin: 0.5rem 0.3rem;*/
+    /*}*/
+    table.pushed-group, table.pushed-group a{
+        font-size: 1rem;
+    }
+    div.task-group-rank table{
+        width: 100%;
+    }
+    div.task-group-rank table tr th:nth-child(2){
+        width: 300px;
+        text-align: center;
+    }
+    div.task-group-rank table tr td:nth-child(2){
+        padding-left: 50px;
+    }
+    div.task-group-rank table tr td:nth-child(1){
+        padding-left: 5px;
+    }
+    div.task-group-rank table tr td:nth-child(2) a{
+        width: 220px;
+    }
+}
+@media only screen and (max-width: 480px){
+    div.j2d-desc{
+        padding-left: 1rem;
+    }
+    div.task-group-rank table tr td:nth-child(2) a{
+        width: 100px
+    }
+    section.popupReview .reviewDialog .prContent label{
+        width: 100%;
+        text-align: left;
+    }
+    section.popupReview .reviewDialog .prContent input, section.popupReview .reviewDialog .prContent textarea{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+

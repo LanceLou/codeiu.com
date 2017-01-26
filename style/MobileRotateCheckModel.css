@@ -1,0 +1,17 @@
+body.mobile .mainWrapper{
+    display: none;
+}
+body.mobile .rotatePrompt{
+    display: block;
+}
+section.rotatePrompt{
+    display: none;
+}
+section.rotatePrompt img{
+    margin-top: 3rem;
+    width: 100px;
+}
+section.rotatePrompt h3{
+    font-weight: 400;
+    text-align: center;
+}

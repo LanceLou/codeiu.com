@@ -1,0 +1,137 @@
+.calenderWrapper{
+    margin-left: 45px;
+    margin-top: 5px;
+    position: relative;
+}
+.calender{
+    width: 230px;
+    height: 240px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+}
+.calender .top{
+    position: relative;
+    height: 25px;
+    width: 230px;
+    background-color: red;
+}
+.calender .top .pre{
+    position: absolute;
+    height: 25px;
+    width: 12%;
+    left: 0;
+    top: 50%;
+    margin-top: -12.5px;
+    background-image: url(../images/pre.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+}
+.calender .cur-mon{
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.calender .top .next{
+    position: absolute;
+    height: 25px;
+    width: 12%;
+    right: 0;
+    top: 50%;
+    margin-top: -12.5px;
+    background-image: url(../images/next.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+}
+.calender .week{
+    /*width: 100%;*/
+    height: 30px;
+    padding: 0 5px;
+}
+.calender .week span:first-child{
+    color: red;
+}
+.calender .week span:last-child{
+    color: red;
+}
+.calender .week span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+.calender .content{
+    padding: 0 5px;
+}
+.calender .content span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    cursor: default;
+}
+.calender .content span:hover{
+    background-color: #ccc;
+    color: red;
+}
+
+/*使用层叠样式的优先级 进行差异化样式*/
+
+/*not-curmonth 非本月方块(span) 样式*/
+.calender .content span.not-curmonth{
+    color: #ccc;
+    background-color: #fff;
+    cursor: text;
+}
+.calender .content span.not-curmonth:hover{
+    background-color: #fff;
+    color: #ccc;
+}
+.calender .content span.curday{
+    background-color: #DC908C;
+    color: #fff;
+}
+.calender .content span.selectedDay{
+    background-color: red;
+    color: #fff;
+}
+#testArea{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+label#calenderControl{
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+    background: #ccc;
+    cursor: pointer;
+}
+label img{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    margin-left: -11px;
+}
+input#task-deadline{
+    width: 190px;
+    padding-left: 3px;
+    line-height: 25px;
+    vertical-align: baseline;
+    margin: 1rem 0.5rem;
+}

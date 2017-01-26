@@ -1,0 +1,24 @@
+body div.launchingBar{
+    display: none;
+}
+body.launching div.launchingBar{
+    display: block;
+    position: fixed;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+@keyframes launchBarAni { from { left: -550px;} to { left: 1750px }  }
+body.launching div.launchingBar .bar{
+    display: inline-block;
+    height: 3px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    background-color: #00b7ee;
+    left: -550px;
+    -webkit-animation: launchBarAni 1.3s ease-in 0s infinite;
+    -o-animation: launchBarAni 1.3s ease-in 0s infinite;
+    animation: launchBarAni 1.3s ease-in 0s infinite;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息修改</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/codeiu/style/font-awesome.min.css">
+    <link rel="stylesheet" href="/codeiu/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/codeiu/style/public.css">
+    <link rel="stylesheet" href="/codeiu/style/launchingBar.css">
+    <link rel="stylesheet" href="/codeiu/style/userInfo.css">
+</head>
+<!--class="launching" 开启加载演示添加launching(className) 取消演示去掉-->
+<body>
+<!--id topM-sysMsg or topM-warning-->
+<section class="top-message">
+    <section class="systemMessage">
+        <h3>您有未读的消息</h3>
+        <ul class="msg-item-container"></ul>
+        <div class="msgContent" data-mid=""></div>
+    </section>
+    <section class="warning">
+        <p class="warning-p"></p>
+    </section>
+</section>
+<div class="launchingBar">
+    <span class="bar"></span>
+</div>
+<!--直接在ul中添加li,3.5s之后删除即可完成一个通知通知与通知之间可以马上跟进-->
+<ul class="editImply">
+</ul>
+<header>
+    <h1 class="logo">大学生在校编码平台</h1>
+    <div class="nav-bar">
+        <i class="bar"></i>
+        <i class="bar"></i>
+        <i class="bar"></i>
+    </div>
+    <span class="nav">
+        <a href="#" class="userLink click-toggle"><i class="name"></i>@<span class="team-name"></span><i class="down-ico"></i></a>
+        <ul class="show-hidden"></ul>
+    </span>
+</header>
+<section class="mobile-nav">
+    <ul>
+        <li><i class="name"></i>@<span class="team-name"></span></li>
+    </ul>
+</section>
+<section class="main-wrapper container">
+    <div class="info-show col-md-12 col-sm-12">
+        <div class="user-avatar center-block"></div>
+        <h2 class="user-name">your name will here</h2>
+        <h4 class="single-intro">your a word intro will here</h4>
+    </div>
+    <div class="col-md-2 col-sm-0 left-nav">
+        <h3>账户设置</h3>
+        <a href="#bi-set"><h5>基础信息设置</h5></a>
+        <a href="#ui-set"><h5>院校信息设置</h5></a>
+        <a href="#tut-set" id="tutor-anchor"><h5>导师招生信息</h5></a>
+    </div>
+    <form action="">
+        <div class="info-details col-md-10 col-sm-12">
+            <h2 id="bi-set">个人资料</h2>
+            <ul>
+                <li>
+                    <span>头像</span>
+                    <span class="avatar-up">
+                        <span class="uploadMask"><i class="bar" id="progress-bar"><i></i></i></span>
+                        <img src="http://ww1.sinaimg.cn/large/ad5d774bjw1f9nzbaii0yj203k03kmx0.jpg" alt="avatar" id="uploadPreview">
+                        <div class="avatar-set" id="fileUploadWrapper">
+                            仅支持 jpg、png 格式大小 5M 以内图片。<br>
+                            <input type="file" style="display: none" id="file-uploader">
+                            <a href="javascript: void(0)" class="btn file-upload-btn" id="file-upload-btn">选择图片</a>
+                            <a class="btn btn-default " id="up_load"  href="javascript: void(0)" >确认上传</a>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <span>个人方向</span>
+                    <span>
+                        <select name="direction" data-defaultIndex = "0">
+                            <option value="0">请选择</option>
+                        </select>
+                    </span>
+                    <span class="edit">
+                        <em></em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>邮箱</span>
+                    <span><input name="email" type="text" placeholder="无效" readonly="readonly"></span>
+                </li>
+                <li>
+                    <span>姓名</span>
+                    <span><input name="name" type="text" placeholder="请输入姓名"></span>
+                    <span class="edit">
+                        <em>姓名不能为空</em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>性别</span>
+                    <span>
+                        <select name="gender" id="gender" data-defaultIndex="0">
+                            <option value="0">男</option>
+                            <option value="1">女</option>
+                        </select>
+                    </span>
+                    <span class="edit">
+                        <em></em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>电话</span>
+                    <span><input name="phone" type="text" placeholder="请输入电话"></span>
+                    <span class="edit">
+                        <em>电话格式错误</em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>一句话介绍</span>
+                    <span><input id="ss-intro" name="aWordIntro" type="text" placeholder="请输入一句话介绍"></span>
+                    <span class="edit">
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>个人简介</span>
+                    <span><textarea name="intro" placeholder="请输入个人简介"></textarea></span>
+                    <span class="edit">
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>个人网址</span>
+                    <span><input name="personPageUrl" type="text" placeholder="请输入个人网址"></span>
+                    <span class="edit">
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li class="no-team">
+                    <span>团队参与</span>
+                    <!--span.join-for-answer-->
+                    <span class="team-join-create error-in">
+                        <input type="text" id="teamName" placeholder="请输入团队名|等待对方队长回复">
+                        <a href="javascript: void(0)" class="btn t-create">创建</a>
+                        <a href="javascript: void(0)" class="btn t-join">加入</a>
+                        <!--(先有导师,才有团队)输入的团队名不存在|输入的团队名已存在 此em用于错误提示-->
+                        <em></em>
+                    </span>
+                    <span class="to-team-page">
+                        <a href="/codeiu/PageJump?page=teamInfo&id=" target="_self" id="toTeam"></a>
+                    </span>
+                </li>
+            </ul>
+            <!--院校相关信息 院校用户请如实填写,方便导师和校方进行统计-->
+            <h2 id="ui-set">院校信息<em>院校用户请如实填写,方便导师和校方进行统计</em></h2>
+            <ul>
+                <li>
+                    <span>学校</span>
+                    <span>
+                        <select name="university" data-defaultIndex = "0">
+                            <option value="0">请选择</option>
+                        </select>
+                    </span>
+                    <span class="edit">
+                        <em></em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>专业</span>
+                    <span>
+                        <select name="profession" data-defaultIndex = "0">
+                            <option value="0">请选择</option>
+                        </select>
+                    </span>
+                    <span class="edit">
+                        <em></em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>年级</span>
+                    <span>
+                        <select name="grade" data-defaultIndex = "0">
+                            <option value="0">请选择</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                        </select>
+                    </span>
+                    <span class="edit">
+                        <em></em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>学号</span>
+                    <span>
+                        <input type="text" name="stuNo" id="stuNo" placeholder="请输入学号">
+                    </span>
+                    <span class="edit">
+                        <em>学号格式错误</em>
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+            </ul>
+            <h2 id="tut-set">导师招生信息<em>个人履历每项之间请用 ||| 分开</em></h2>
+            <ul id="tutForStuList">
+                <li>
+                    <span>学院要求</span>
+                    <span><textarea name="studentRequirement" placeholder="学员要求"></textarea></span>
+                    <span class="edit">
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+                <li>
+                    <span>个人履历</span>
+                    <span><textarea name="experience" placeholder="个人履历"></textarea></span>
+                    <span class="edit">
+                        <a href="javascript: void(0)">保存</a>
+                        <a href="javascript: void(0)">编辑</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </form>
+</section>
+<!-- 建站相关信息介绍: 网站相关  联系合作  关注我们 -->
+<section class="infoShow">
+    <div class="col-md-1"></div>
+    <section class="aboutSite col-md-2">
+        <span class="title">网站相关</span>
+        <span><a href="#">关于我们</a></span>
+        <span><a href="#">帮助中心</a></span>
+    </section>
+    <section class="contactCo col-md-2">
+        <span class="title">联系合作</span>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">加入我们</a></span>
+    </section>
+    <section class="aboutUs col-md-2">
+        <span class="title">关注我们</span>
+        <span><a href="#">github</a></span>
+        <span><a href="#">微博</a></span>
+        <span><a href="#">Twitter</a></span>
+    </section>
+    <section class="friendlyLink col-md-2">
+        <span class="title">友情链接</span>
+        <span><a href="#">w3cplus</a></span>
+        <span><a href="#">w3c</a></span>
+        <span><a href="#">MDN</a></span>
+    </section>
+    <section class="declare col-md-3">
+        <span>网站声明</span>
+        <p>本站点所有资源均由用户产生与使用,站点仅是一个资源的存放与分享平台,不对相关的资源的版权负责。</p>
+    </section>
+    <div class="col-md-1 col-sm-0"></div>
+</section>
+
+
+<!--回到顶部功能部分-->
+<span class="backToTop">
+    <i class="fa fa-chevron-up"></i>
+</span>
+
+<!-- 相关版权申明 -->
+<footer>
+    <span class="block">Copyright © 2016 CodeIU</span>
+    <span class="block">备案中......</span>
+</footer>
+<script src="/codeiu/script/utils.js"></script>
+<script src="/codeiu/script/public.js"></script>
+<script type="text/javascript" src="/codeiu/script/jquery.min.js"></script>
+<script src="/codeiu/scriptLib/moxie.js"></script>
+<script src="/codeiu/scriptLib/plupload.dev.js"></script>
+<script src="/codeiu/scriptLib/qiniu.js"></script>
+<script src="/codeiu/script/imageUpload.js"></script>
+<script src="/codeiu/script/userInfo.js"></script>
+<!--
+<div>
+    <section class="popupReview click-close-pr popupShow">
+        <div class="reviewDialog dialog-show">
+            <div class="prHeader"> 团队搜索
+                <button class="close-popup click-close-pr">×</button>
+            </div>
+             search-result-show: 当开启搜索时显示
+            <div class="prContent" id="search-result-show">
+                <input type="text" id="teamSearchIn" placeholder="请输入对方团队姓名"><a href="javascript: void(0)" class="searchTeamBtn"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <div class="resultTeamListContainer">
+                    <ul>
+                        <li>
+                            <p>alloy</p>
+                            <p>团队成员: stu-1,stu-2,stu-3,stu-4,test-stu5</p>
+                            <i></i>
+                        </li>
+                        <li>
+                            <p>alloy</p>
+                            <p>团队成员: stu-1,stu-2,stu-3,stu-4,test-stu5</p>
+                            <i></i>
+                        </li>
+                        <li>
+                            <p>alloy</p>
+                            <p>团队成员: stu-1,stu-2,stu-3,stu-4,test-stu5</p>
+                            <i></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="prBtns">
+                <p id="team-search-select-notice">请点击对应方块选择团队</p>
+                <a href="javascript:void (0)" class="btn cancel click-close-pr">取消</a>
+                <a href="javascript:void (0)" class="btn submit-pr">加入</a></div>
+        </div>
+    </section>
+</div>
+-->
+</body>
+</html>

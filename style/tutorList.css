@@ -1,0 +1,249 @@
+header{
+    z-index: 900;
+    background-color: #fff;
+}
+section.mainWrapper{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 500px;
+}
+section.mainWrapper .mf-nav{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    margin: 3rem 0 2rem 1rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0;
+    border-radius: 3px;
+    background-color: #ffc1b0;
+}
+section.mainWrapper .user-state{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    display: inline-block;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    line-height: 3rem;
+    background-color: #ccc;
+}
+section.mainWrapper .user-state a{
+    margin: 0 0.2rem;
+}
+div#attachToWin{
+    position: fixed;
+    top: 0;
+}
+/*section.mainWrapper .mf-nav:before{*/
+    /*content: "";*/
+    /*width: 3px;*/
+    /*height: 3rem;*/
+    /*position: absolute;*/
+    /*top: -3rem;*/
+    /*left: 3rem;*/
+    /*background-color: #555;*/
+/*}*/
+/*section.mainWrapper .mf-nav:after{*/
+    /*content: "";*/
+    /*width: 3px;*/
+    /*height: 3rem;*/
+    /*position: absolute;*/
+    /*top: -3rem;*/
+    /*right: 3rem;*/
+    /*background-color: #555;*/
+/*}*/
+/*section.mainWrapper .mf-nav li{*/
+    /*background-color: #555555;*/
+/*}*/
+/*section.mainWrapper .mf-nav li.cur-direction{*/
+    /*background-color: transparent;*/
+/*}*/
+/*section.mainWrapper .mf-nav a{*/
+    /*display: inline-block;*/
+    /*margin: 0;*/
+    /*padding: 0 1.2rem;*/
+    /*line-height: 3.7rem;*/
+    /*color: #fff;*/
+    /*font-size: 1.5rem;*/
+    /*text-decoration: none;*/
+/*}*/
+/*section.mainWrapper .mf-nav li.cur-direction a:hover{*/
+    /*background-color: #ffc1b0;*/
+/*}*/
+/*section.mainWrapper .mf-nav ul{*/
+    /*list-style: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*background-color: #aed2b9;*/
+/*}*/
+/*section.mainWrapper .mf-nav ul li{*/
+    /*display: inline-block;*/
+/*}*/
+section.mainWrapper section.field-title{
+    line-height: 3rem;
+    font-size: 1.7rem;
+    border-bottom: 1px solid #ccc;
+    padding-left: 5rem;
+    padding-top: 7rem;
+}
+section.mainWrapper section.field-title:first-of-type{
+    padding-top: 4rem;
+}
+section.mainWrapper section.field-tutors{
+    height: 420px;
+    font-size: 0;
+}
+section.mainWrapper section.field-tutors .tutor{
+    display: inline-block;
+    height: 100%;
+    width: 3%;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    overflow: hidden;
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
+}
+section.mainWrapper section.field-tutors .tutor .detail-block{
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: bottom;
+    font-size: 1rem;
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
+    overflow: hidden;
+}
+section.mainWrapper section.field-tutors div.unwind .brief-block span:nth-of-type(2) a{
+    pointer-events: none;
+    background-color: #ccc;
+}
+section.mainWrapper section.field-tutors div.unwind .brief-block{
+    width: 5%;
+}
+section.mainWrapper section.field-tutors .brief-block span:nth-of-type(2) a{
+    background-color: #36C565;
+}
+section.mainWrapper section.field-tutors .brief-block span:last-child a{
+    margin-top: 15rem;
+}
+section.mainWrapper section.field-tutors div.unwind .detail-block{
+    width: 95%;
+}
+section.mainWrapper section.field-tutors .tutor .brief-block{
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    font-size: 1.3rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+section.mainWrapper section.field-tutors .tutor .brief-block a{
+    display: block;
+    margin: 1rem 0;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF9800;
+    border-radius: 2px;
+}
+section.mainWrapper section.field-tutors .tutor .brief-block > *{
+    display: block;
+}
+section.field-tutors .tutor .detail-block > div{
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+section.field-tutors .tutor .detail-block .left-show{
+    width: 36%;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+section#tutor-selected a.selectBtn{
+    background-color: #555;
+}
+section.field-tutors .tutor .detail-block .left-show .avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem auto;
+    margin-top: 5rem;
+}
+section.field-tutors .tutor .detail-block .left-show h3,h5{
+    color: #555;
+}
+section.field-tutors .tutor .detail-block .left-show h5{
+    margin-top: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+section.field-tutors .tutor .detail-block .right-show{
+    width: 63%;
+    padding-top: 4rem;
+}
+section.field-tutors .tutor .detail-block .right-show span{
+    font-size: 1.7rem;
+    display: inline-block;
+}
+section.field-tutors .tutor .detail-block .right-show span i{
+    display: block;
+    font-style: normal;
+}
+section.field-tutors .tutor .detail-block .right-show span:first-child{
+    width: 20%;
+    padding-right: 1.5rem;
+    text-align: right;
+    vertical-align: top;
+}
+section.field-tutors .tutor .detail-block .right-show span:last-child{
+    width: 75%;
+}
+@media only screen and (max-width: 768px){
+    section.mainWrapper{
+        padding: 0;
+    }
+    section.mainWrapper .mf-nav{
+        display: none;
+    }
+    section.field-tutors div.unwind .detail-block .left-show{
+        width: 25%;
+    }
+    section.field-tutors div.unwind .detail-block .left-show .avatar{
+        width: 60px;
+        height: 60px;
+    }
+    section.field-tutors div.unwind .detail-block .left-show h3{
+        font-size: 1.5rem;
+    }
+    section.field-tutors div.unwind .detail-block .left-show h5{
+        font-size: 1rem;
+    }
+    section.field-tutors div.unwind .detail-block .right-show{
+        width: 74%;
+    }
+    section.field-tutors .tutor .detail-block .right-show p{
+        margin: 0 0 5px;
+    }
+    section.field-tutors .tutor .detail-block .right-show span:first-child{
+        padding-right: 5px;
+    }
+    section.field-tutors .tutor .detail-block .right-show span{
+        font-size: 1.5rem;
+    }
+}

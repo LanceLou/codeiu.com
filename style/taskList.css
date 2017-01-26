@@ -1,0 +1,68 @@
+section.mainWrapper{
+    min-height: 700px;
+}
+section.mainWrapper > h3{
+    display: none;
+}
+section#noTask > h3{
+    display: block;
+}
+section.mainWrapper section.stage-wrapper:last-child{
+    padding-bottom: 100px;
+}
+section.stage-wrapper{
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h3.task-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+section.stage-wrapper div.task{
+    font-size: 1rem;
+    background-color: #fff;
+    border: 10px solid #eee;
+    outline: 1px solid #ccc;
+    outline-offset: -10px;
+    padding: 2px 5px;
+    width: 25%;
+}
+section.stage-wrapper div.task div.task-attr{
+    color: #8e8e8e;
+}
+section.stage-wrapper div.task a{
+    color: #000;
+}
+section.stage-wrapper div.task i{
+    text-decoration: none;
+}
+section.stage-wrapper div.task .task-attr-left,.task-attr-right{
+    display: inline-block;
+}
+section.stage-wrapper div.task .task-attr-left{
+    text-align: left;
+    width: 45%;
+}
+section.stage-wrapper div.task .task-attr-right{
+    text-align: right;
+    width: 53%;
+}
+@media only screen and (max-width: 1024px){
+    section.stage-wrapper div.task {
+        width: 33.3%;
+    }
+}
+@media only screen and (max-width: 789px){
+    section.stage-wrapper div.task{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 480px){
+    section.stage-wrapper div.task{
+        width: 100%;
+    }
+}

@@ -1,0 +1,151 @@
+section.container{
+    min-height: 700px;
+}
+section.main-content{
+    background-color: #f5f3f3;
+    padding: 15px 10px;
+}
+section.main-content > #no-review-display{
+    display: none;
+}
+section#main-content-noReview > #no-review-display{
+    display: block;
+}
+section.container i{
+    font-style: normal;
+}
+section.finishInfo{
+    background-color: #fff;
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+section.finishInfo a{
+    word-wrap: break-word;
+}
+section.finishInfo .team-name{
+    font-size: 2rem;
+}
+section.finishInfo .baseData{
+    font-size: 0.9rem;
+    color: #9c9c9c;
+}
+section.finishInfo > span{
+    display: block;
+    margin: 7px 0;
+}
+section.finishInfo .btn{
+    background-color: #36C565;
+    color: #ffffff;
+}
+section.finishInfo i{
+    margin: 0 0.3rem;
+}
+div.comment{
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+div.comment .comment-header{
+    width: 100%;
+    display: block;
+    padding: 5px 10px;
+    background-color: #ece6e6;
+}
+div.comment .comment-header i{
+    color: #23527c;
+    vertical-align: text-top;
+}
+div.comment .comment-content{
+    padding: 12px 5px;
+}
+div.comment .comment-content li{
+    list-style: none;
+}
+div.comment .comment-content ul.comment-reply-cols{
+    background-color: #fcfcfc;
+    margin: 10px 15px;
+    padding: 10px;
+}
+div.comment .comment-content li.comment-reply:first-child{
+    border: 0;
+}
+div.comment .comment-content li.comment-reply{
+    border-top: 1px dotted #ccc;
+}
+div.comment .comment-content p.rep-info{
+    margin-bottom: 5px;
+    color: #9c9c9c;
+}
+div.comment .comment-content p.rep-content{
+    font-size: 1rem;
+}
+section.popupReview .reviewDialog .prContent{
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+section.popupReview .reviewDialog .prContent span.gradeCtl{
+    width: 3.5rem;
+    display: inline-block;
+    line-height: 2.7rem;
+    font-weight: 900;
+    background-color: #36C565;
+    margin: 0 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+section.popupReview .reviewDialog input{
+    width: 5rem;
+    height: 2.7rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    outline: none;
+}
+section.popupReview .reviewDialog label{
+    display: block;
+}
+section.popupReview .reviewDialog textarea{
+    width: 100%;
+    border-color: #d6d4d2;
+    border-radius: 5px;
+    resize: none;
+}
+section.popupReview .reviewDialog .gradeStatement{
+    margin-top: 10px;
+    padding-left: 5px;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #9c9c9c;
+}
+section.popupReview .reviewDialog .gradeStatement em{
+    margin-left: 10px;
+    display: inline-block;
+    width: 1.8rem;
+    text-align: left;
+}
+section.popupReview .reviewDialog .prBtns a.cancel{
+    color: #000;
+    background-color: transparent;
+}
+@media only screen and (max-width: 768px){
+    div.comment .comment-header i.grade{
+        display: block;
+        text-align: right;
+    }
+    section.popupReview .reviewDialog{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 768px){
+    div.comment .comment-header i.grade{
+        top: 8px;
+        position: absolute;
+        right: 20px;
+    }
+}
