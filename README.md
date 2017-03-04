@@ -1,5 +1,7 @@
 # codeiu.com个人实践项目
 
+### 测试账号: loulincong@gmail.com(导师) 密码: 123456789
+### 测试账号: lc1456666@outlook.com(学生) 密码: 123456789
 ### [在线演示地址 &rarr;](http://115.29.49.217/codeiu/)
 
 ##简介
